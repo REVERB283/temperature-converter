@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 
 @Component({
 	selector: "temperature-converter",
@@ -14,10 +14,7 @@ export class TemperatureConverter implements OnInit {
 		this.fahrenheit = "";
 	}
 
-	ngOnInit() {
-		// C = (F − 32) × 5/9
-		// F = C*9/5 + 32
-	}
+	ngOnInit() {}
 
 	changeTemparutue(value, type) {
 		switch (type) {
